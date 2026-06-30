@@ -1,0 +1,11 @@
+# hooman 미러 스토어
+
+이 사이트는 FruitsFamily 셀러를 위한 독립 커스텀 스토어프론트입니다.
+
+상품 데이터는 아래 FruitsFamily 공개 셀러 샵에서 가져옵니다.
+
+https://fruitsfamily.com/seller/93s/synthetichooman
+
+구매, 최종 재고 확인, 결제, 구매자 로그인, 분쟁 처리는 FruitsFamily에서 이루어집니다. 이 커스텀 스토어프론트는 상품 탐색, 에디토리얼형 진열, 상품 확인을 위한 사이트입니다.
+
+cannedfruits는 FruitsFamily와 관련이 없는 비공식 독립 도구입니다. 사용 과정에서 발생하는 계정, 운영, 정책상 불이익은 사용자에게 귀속됩니다.

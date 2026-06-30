@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CannedFruits</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f7f4;
+        --ink: #141414;
+        --muted: #67645f;
+        --line: #d8d4cc;
+        --accent: #165f53;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--ink);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        margin: 0;
+      }
+
+      main {
+        margin: 0 auto;
+        max-width: 760px;
+        padding: 72px 22px;
+      }
+
+      header {
+        border-bottom: 1px solid var(--line);
+        margin-bottom: 34px;
+        padding-bottom: 28px;
+      }
+
+      h1 {
+        font-size: clamp(38px, 7vw, 68px);
+        letter-spacing: 0;
+        line-height: 0.95;
+        margin: 0 0 18px;
+      }
+
+      p {
+        color: var(--muted);
+        font-size: 17px;
+        line-height: 1.65;
+        margin: 0 0 18px;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 30px 0;
+      }
+
+      .button {
+        align-items: center;
+        background: var(--ink);
+        color: var(--bg);
+        display: inline-flex;
+        font-size: 15px;
+        min-height: 44px;
+        padding: 0 16px;
+        text-decoration: none;
+      }
+
+      .button.secondary {
+        background: transparent;
+        border: 1px solid var(--line);
+        color: var(--ink);
+      }
+
+      section {
+        border-top: 1px solid var(--line);
+        padding: 24px 0;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin: 0 0 12px;
+      }
+
+      ul {
+        color: var(--muted);
+        line-height: 1.75;
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      code {
+        background: #fff;
+        border: 1px solid var(--line);
+        padding: 2px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>CannedFruits</h1>
+        <p>FruitsFamily 셀러를 위한 독립 웹샵 제작 앱입니다. 셀러 링크와 디자인 정보를 입력하면 GitHub와 Cloudflare Pages에 배포 가능한 웹사이트 프로젝트 폴더를 만듭니다.</p>
+        <div class="actions">
+          <a class="button" href="https://github.com/synthetichooman/cannedfruits/releases/latest">최신 버전 다운로드</a>
+          <a class="button secondary" href="https://github.com/synthetichooman/cannedfruits">GitHub 저장소</a>
+        </div>
+      </header>
+
+      <section>
+        <h2>설치 전 확인</h2>
+        <ul>
+          <li>macOS 14 이상에서 사용합니다.</li>
+          <li>현재 빌드는 Apple Developer ID로 서명되거나 notarization 처리되지 않았습니다.</li>
+          <li>처음 실행할 때 경고가 나오면 앱을 우클릭하고 <code>열기</code>를 선택하세요.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>기본 흐름</h2>
+        <ul>
+          <li>앱에서 새 프로젝트를 만듭니다.</li>
+          <li>FruitsFamily 셀러 링크, 샵 이름, 색상, 로고를 입력합니다.</li>
+          <li>브라우저에서 미리보기를 확인합니다.</li>
+          <li>완성된 프로젝트 폴더를 내보냅니다.</li>
+          <li>내보낸 폴더를 GitHub와 Cloudflare Pages에 연결합니다.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>고지</h2>
+        <p>CannedFruits는 FruitsFamily와 관련이 없는 비공식 독립 도구입니다. 사용 과정에서 발생하는 계정, 운영, 정책상 불이익은 사용자에게 귀속됩니다.</p>
+      </section>
+    </main>
+  </body>
+</html>

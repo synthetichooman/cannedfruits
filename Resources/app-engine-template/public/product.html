@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product | hooman</title>
+    <meta name="description" content="hooman product detail." />
+    <link id="site-favicon" rel="icon" />
+    <link rel="stylesheet" href="/styles.css?v=0.1.3" />
+    <script type="module" src="/product.js?v=0.1.3"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand" href="/">
+          <img class="brand-logo" id="site-logo" alt="" hidden />
+          <span id="site-brand">hooman</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="product-root" class="product-detail" aria-live="polite">
+      <div class="loading">Loading product...</div>
+    </main>
+
+    <footer class="site-footer">
+      <p id="footer-disclaimer">
+        Product data is mirrored from FruitsFamily. Checkout and final availability are handled by FruitsFamily.
+      </p>
+      <p id="footer-legal"></p>
+    </footer>
+  </body>
+</html>

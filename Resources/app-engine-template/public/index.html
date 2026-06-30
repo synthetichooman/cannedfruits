@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>hooman</title>
+    <meta name="description" content="hooman storefront." />
+    <link id="site-favicon" rel="icon" />
+    <link rel="stylesheet" href="/styles.css?v=0.1.3" />
+    <script type="module" src="/app.js?v=0.1.3"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand" href="/">
+          <img class="brand-logo" id="site-logo" alt="" hidden />
+          <span id="site-brand">hooman</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="store-intro" aria-label="Store information">
+        <p id="store-description"></p>
+        <p id="product-count" aria-live="polite">Loading products</p>
+      </section>
+
+      <section class="product-grid" id="product-grid" aria-label="Product list" aria-live="polite">
+        <div class="loading">Loading products...</div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p id="footer-statement">
+        This independent storefront mirrors public FruitsFamily product data.
+      </p>
+      <p id="footer-disclaimer">
+        Product data is mirrored from FruitsFamily. Checkout and final availability are handled by FruitsFamily.
+      </p>
+      <p id="footer-legal"></p>
+    </footer>
+  </body>
+</html>

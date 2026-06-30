@@ -1,0 +1,52 @@
+export const SITE_CONFIG = {
+  "site": {
+    "name": "hooman",
+    "domain": "localhost:8788",
+    "description": "",
+    "locale": "ko-KR",
+    "currency": "KRW"
+  },
+  "seller": {
+    "id": 11800,
+    "base36Id": "93s",
+    "username": "synthetichooman",
+    "canonicalUrl": "https://fruitsfamily.com/seller/93s/synthetichooman",
+    "sourceUrl": "https://fruitsfamily.com/seller/93s/synthetichooman"
+  },
+  "products": {
+    "sort": "NEW",
+    "pageSize": 40,
+    "maxPages": 5,
+    "showSold": true
+  },
+  "cta": {
+    "label": "Buy on FruitsFamily",
+    "soldLabel": "View sold item on FruitsFamily",
+    "disclaimer": "Product data is mirrored from FruitsFamily. Checkout and final availability are handled by FruitsFamily."
+  },
+  "legal": {
+    "disclaimer": "cannedfruits는 FruitsFamily와 관련이 없는 비공식 독립 도구입니다. 사용 과정에서 발생하는 계정, 운영, 정책상 불이익은 사용자에게 귀속됩니다."
+  },
+  "design": {
+    "referenceUrl": "",
+    "referenceImage": "",
+    "notes": ""
+  },
+  "theme": {
+    "accent": "#111111",
+    "background": "#ffffff",
+    "text": "#111111"
+  }
+};
+
+export function getSiteConfig(env = {}) {
+  const runtimeConfig = globalThis.__CANNED_FRUITS_SITE_CONFIG__ || SITE_CONFIG;
+  const domain = env.SITE_DOMAIN || runtimeConfig.site.domain;
+  return {
+    ...runtimeConfig,
+    site: {
+      ...runtimeConfig.site,
+      domain,
+    },
+  };
+}
